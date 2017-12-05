@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tsy_ws", "tsy_ws\tsy_ws.csproj", "{042AA330-8AA4-4991-8AA0-185AA0232642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsy.Apns.Domain", "Tsy.Apns.Domain\Tsy.Apns.Domain.csproj", "{30123BE1-2DB8-4816-86F2-D5C3DD67EB57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tsy.Apns.WebApi", "Tsy.Apns.WebApi\Tsy.Apns.WebApi.csproj", "{19E9BE7D-2682-405B-A63B-C55C4EB9BBAF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{042AA330-8AA4-4991-8AA0-185AA0232642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{042AA330-8AA4-4991-8AA0-185AA0232642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{042AA330-8AA4-4991-8AA0-185AA0232642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{042AA330-8AA4-4991-8AA0-185AA0232642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30123BE1-2DB8-4816-86F2-D5C3DD67EB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30123BE1-2DB8-4816-86F2-D5C3DD67EB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30123BE1-2DB8-4816-86F2-D5C3DD67EB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30123BE1-2DB8-4816-86F2-D5C3DD67EB57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19E9BE7D-2682-405B-A63B-C55C4EB9BBAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19E9BE7D-2682-405B-A63B-C55C4EB9BBAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19E9BE7D-2682-405B-A63B-C55C4EB9BBAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19E9BE7D-2682-405B-A63B-C55C4EB9BBAF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

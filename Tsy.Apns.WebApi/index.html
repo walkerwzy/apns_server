@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>部署说明</title>
+</head>
+    <body>
+        <h1 style="margin:20px auto; width:800px;">部署说明</h1>
+        <div style="margin:20px auto; width:800px; border:1px solid #ccc; padding:10px; background-color: #fcfcfc;">
+            <dl>
+                <dt>请参照本说明更改Web.Config如下位置内容</dt>
+                <dd>&bull; 复制App_Data目录里的userdevice.db文件至任意位置，并相应修改ConnectionString节点里的值，避免因更新程序引起错误的覆盖操作</dd>
+                <dd>&bull; 制作一个用于推送的服务器证书(production)，放置到Certs目录</dd>
+                <dd>&bull; 更改appSettings里的apns:certname为真实的证书名称</dd>
+                <dd>&bull; 更改appSettings里的apns:certkey为制作证书的时候设置的真实密码</dd>
+                <dd>&bull; 更改appSettings里的apns:debug为false，以使用苹果生产环境的消息服务</dd>
+            </dl>
+            <br />
+            <p>本程序使用sqlite3数据库，如果需要更换为自定义的数据库，只需要自行实现Tsy.Apns.Domain.Service.IDeviceTokenService，并在Global.asax里面将自行实现的类注入即可，即修改下面一行</p>
+            <pre>
+container.Register&lt;IDeviceTokenService, <span style="color:red; text-decoration: line-through;">DeviceTokenService</span>&gt;(Lifestyle.Transient);
+            </pre>
+        </div>
+        <!--<form action="/api/test/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="abc"/>
+            <input type="submit" value="submit"/>
+        </form>-->
+    </body>
+</html>
