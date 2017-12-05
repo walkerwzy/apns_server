@@ -166,7 +166,12 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <Content Include="App_Data\userdevices.db" />
-    <Content Include="Certs\pushtest.cert.dev.p12" />
+    <Content Include="Certs\dev_push_cert.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Certs\dis_push_cert.p12">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\PublishProfiles\file.pubxml" />
     <None Include="Properties\PublishProfiles\ftp.pubxml" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
