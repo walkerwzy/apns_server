@@ -175,6 +175,9 @@
     <None Include="Properties\PublishProfiles\file.pubxml" />
     <None Include="Properties\PublishProfiles\ftp.pubxml" />
     <None Include="Properties\PublishProfiles\local.pubxml" />
+    <Content Include="tsygeo.plist">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
